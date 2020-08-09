@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import SearchBar from './SearchBar'
 import TopNewsHeadlines from './TopNewsHeadlines'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import SearchNewsContainer from '../containers/SearchNewsContainer';
-import Bookmark from './Bookmark';
 import BookmarkList from './BookmarkList';
 
 export class App extends Component {
@@ -11,13 +9,14 @@ export class App extends Component {
     return (
       <Router>
         <div >
+        <h3 className = 'main-heading'>News website</h3> 
           <nav>
-            <ul className = 'nav-links'>
+            <ul className = 'nav-ul'>
               <li>
-                <Link to="/">Home</Link>
+                <Link className = 'nav-ul-links' to="/">Home</Link>
               </li>
               <li>
-                <Link to="/bookmarks">Bookmarks</Link>
+                <Link className = 'nav-ul-links' to="/bookmarks">Bookmarks</Link>
               </li>
             </ul>
           </nav>

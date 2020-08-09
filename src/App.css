@@ -1,37 +1,43 @@
+.main-heading{
+  text-align: center;
+  justify-content: space-around;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  color: black;
+}
+
 img {
   display: inline-block;
   vertical-align: middle; /* or top or bottom */
-  
 }
+
 .text {
   display: inline-block;
   vertical-align: middle; /* or top or bottom */
   text-align: justify;
 }
+
 div {
-  padding: 30px;
-  margin: 30;
-  /* background-color: rgb(95, 145, 160); */
+  padding: 10px;
+  margin: 10;
+  padding-top: 0%;
 }
-.search-form{
-  
+form {
+  text-align: center;
+  margin:9px ;
 }
 .search-form-input{
   width: 30%;
   height: 35px;
-
-  border: none;
+  border-style: solid;
   border-bottom: 2px solid rgb(32, 0, 0);
   border-radius: 4px;
   background-repeat: no-repeat;
   padding-left: 40px;
   cursor: pointer;
   text-decoration: none;
-
-}
-
-input, .search-form-input:focus {
-
+  background-color: ivory;
+  
 }
 
 .search-form-button{
@@ -44,6 +50,7 @@ input, .search-form-input:focus {
 }
 
 nav{
+  height: 30%;
   display:flex;
   justify-content: space-around;
   align-items: center;
@@ -51,14 +58,35 @@ nav{
   background: rgb(148, 185, 204);
   color: white;
   height:30;
+  margin: 0;
 }
 
-.nav-links{
-  width: 40%;
+.nav-ul{
+  width: 30%;
   display:flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
   min-height: 10vh;
-  text-decoration: rgb(57, 45, 138);
+  text-decoration:none rgb(57, 45, 138);
+}
+
+
+.nav-ul-links {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+  text-align: center;
+  text-decoration: none;
+}
+
+a {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: normal;
+  text-decoration: none;
+}
+a:hover {
+  
+}
+a:active {
+  
 }

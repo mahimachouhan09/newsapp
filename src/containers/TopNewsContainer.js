@@ -13,7 +13,4 @@ const mapDispatchToProps = dispatch => {
     fetchTopNewsHeadlines: () => dispatch(fetchTopNewsHeadlines())
   }
 }
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(PrintTopNews)
+export default connect( mapStateToProps,mapDispatchToProps )(PrintTopNews)

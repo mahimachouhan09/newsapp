@@ -17,7 +17,4 @@ const mapDispatchToProps = dispatch => {
     unBookmarkItem : (items) => dispatch(unBookmarkItem(items))
   }
 }
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(PrintSearchNews)
+export default connect( mapStateToProps, mapDispatchToProps)(PrintSearchNews)

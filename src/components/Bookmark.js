@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { bookmarkItem, unBookmarkItem } from '../actions/index';
 
 const Bookmark = ({ item, key ,bookmarkItem ,bookmarkItems , unBookmarkItem}) => {
-
   const isBookmark = item => {
     if (bookmarkItems !== null) {
       return (
@@ -32,6 +31,5 @@ const Bookmark = ({ item, key ,bookmarkItem ,bookmarkItems , unBookmarkItem}) =>
 const mapStateToProps = state => ({
   bookmarkItems: state.bookmarks.bookmarkItems
 });
-  
 
 export default connect(mapStateToProps,{ bookmarkItem, unBookmarkItem })(Bookmark)

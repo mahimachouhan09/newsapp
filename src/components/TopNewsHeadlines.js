@@ -6,7 +6,6 @@ import TopNewsContainer from '../containers/TopNewsContainer';
 export class TopNewsHeadlines extends Component {
   constructor(props){
     super(props);
-    // this.state = { topnews : ''}
   }
 
   componentDidMount(){
@@ -17,7 +16,6 @@ export class TopNewsHeadlines extends Component {
     return (
       <div>
         <h2>Top News Headlines</h2>
-        {/* {this.props.fetchTopNewsHeadlines(this.state.topnews)} */}
         <TopNewsContainer />
       </div>
     )

@@ -30,9 +30,7 @@ const topnews = (state = initialState, action) => {
         topnews: {},
         error: action.payload
     }
-  
     default: return state
-  
   }
 }
   
